@@ -28,14 +28,14 @@ const onSearchFormSumbit = event => {
   }
   //show the loading sign
   loader.style.display = 'block';
-  loaderText.style.display = 'block';
+//   loaderText.style.display = 'block';
   //start the search of the query
   querySearch(searchedQuery)
     .then(result => {
       gallery.innerHTML = '';
 
       loader.style.display = 'none';
-      loaderText.style.display = 'none';
+    //   loaderText.style.display = 'none';
 
       if (result.total === 0) {
         iziToast.show({
