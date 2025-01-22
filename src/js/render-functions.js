@@ -1,7 +1,11 @@
 export const createMarkUp = imgINfo => {
-  return `<a class='query-image-big' href="${imgINfo.largeImageURL}">
-  <li>
-    <img class='query-image' src="${imgINfo.webformatURL}" alt="${imgINfo.tags}" />  
+  return `<li>
+  <a class="query-image-big" href="${imgINfo.largeImageURL}">
+    <img
+      class="query-image"
+      src="${imgINfo.webformatURL}"
+      alt="${imgINfo.tags}"
+    />
     <ul class="gallery-details">
       <li class="gallery-details-section">
         <h3 class="gallery-details-heading">Likes</h3>
@@ -20,6 +24,6 @@ export const createMarkUp = imgINfo => {
         <p class="gallery-details-text">${imgINfo.downloads}</p>
       </li>
     </ul>
-  </li>
-</a>`;
+  </a>
+</li>`;
 };
